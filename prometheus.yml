@@ -1,0 +1,6 @@
+scrape_configs:
+  - job_name: apollo-server-integration
+    static_configs:
+      - targets: ['backend:80']
+global:
+  scrape_interval: 60s
